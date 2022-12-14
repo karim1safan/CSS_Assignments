@@ -1,0 +1,39 @@
+body
+{font-family: Arial, Helvetica, sans-serif;}
+.parent
+{
+    width: 600px;
+    height: 300px;
+    background-color: #EEE;
+    padding: 10px;
+    margin: 10px auto;
+    display: flex;
+    flex-flow: column;
+}
+.parent div
+{
+    background-color: #009688;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* 
+    To Process Height Because You Are Use The Column In Flex-direction > Flex-basic = Height > When You Make Flex-direction Column Not Row If Was Row This Process The Width
+    */
+    flex-basis: 50%;
+}
+.parent .one
+{
+    align-self: flex-end;
+    width: 7%;
+}
+.parent .two
+{
+    /* The Height Inherit From Parent = 50% From Parent*/
+    width: 60%;
+}
+.parent .three
+{
+    align-self: flex-end;
+    width: 7%
+}

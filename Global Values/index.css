@@ -1,0 +1,51 @@
+:root{
+    --mainColor:#EEE;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+div{
+    width: 400px;
+    margin: 30px auto;
+    padding: 10px;
+    background-color: var(--mainColor);
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+/* My Framework */
+/* Global Variable */
+/* Draw Angle */
+.arrow::before
+{
+    content: "";
+    border: 20px solid ;
+    position: absolute;
+}
+/* Direction */
+/* Top */
+.top::before
+{
+    border-color:  transparent transparent var(--mainColor) transparent ;
+    top: -40px;
+}
+/* Right */
+.right::before
+{
+    border-color: transparent transparent transparent var(--mainColor);
+    right: -40px;
+}
+/* Bottom */
+.bottom::before
+{
+    border-color: var(--mainColor) transparent transparent transparent ;
+    bottom: -40px;
+}
+/* Left */
+.left::before
+{
+    border-color: transparent var(--mainColor) transparent transparent;
+    left: -40px;
+}

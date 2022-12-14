@@ -1,0 +1,51 @@
+body{
+  font-family: "open sans";
+}
+header{
+  grid-area: head;
+  background-color: #03A9F4;
+}
+header::before{
+  content: "Header";
+  padding: 10px;
+  display: inline-block;
+}
+section{
+  grid-area: sec;
+  background-color: #FF5722;
+}
+section::before{
+  content: "Section";
+  padding: 10px;
+  display: inline-block;
+}
+aside{
+  grid-area: sid;
+  background-color: #607D8B;
+}
+aside::before{
+  content:"Aside";
+  padding: 10px;
+  display: inline-block;
+}
+footer{
+  grid-area: foot;
+  background-color: #009688;
+}
+footer::before{
+  content: "Footer";
+  padding: 10px;
+  display: inline-block;
+}
+.layout{
+  color: white;
+  height: 100vh;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(10,1fr);
+  grid-template-rows: 50px auto 50px;
+  grid-template-areas: 
+  "head head head head head head head head head head"
+  "sec sec sec sec sec sec sid sid sid sid"
+  "foot foot foot foot foot foot foot foot foot foot";
+}

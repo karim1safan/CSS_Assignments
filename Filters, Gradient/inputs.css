@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+}
+.parent
+{
+    width: 600px;
+    margin: 20px auto;
+    position: relative;
+}
+input{
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding-left: 10px;
+    caret-color:red;
+}
+input[placeholder]
+{
+    font-size: 20px;
+}
+.one,.two,.three
+{
+    background-color: #EEE;
+    margin: 20px;
+    padding: 10px;
+    height: 50px;
+    
+}
+.after::after
+{
+    content: "";
+    height: 3px;
+    width: 93%;
+    position:absolute;
+    background-color: red;
+    left: 21px;
+    background-image: 
+    linear-gradient(to right,
+    #f44336 50%,
+    #009688 50%,
+    #009688 100%
+    );
+}
+.one::after{
+    bottom: 0;
+}
+.two::after{
+    bottom: 67px;
+}
+.three::after{
+    bottom: 137px;
+}

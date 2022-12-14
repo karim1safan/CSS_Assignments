@@ -1,0 +1,23 @@
+body{
+  font-family: "open sans";
+}
+.grid {
+  background-color: #ddd;
+  padding: 20px;
+  width: 800px;
+  height: 400px;
+  display: grid;
+  grid-template-columns: repeat(2,350px);
+  /* gap: 20px; */
+  /* grid-template-rows: repeat(2,30px); */
+  justify-content: space-around;
+  align-content: space-between;
+}
+.grid div{
+  font-weight: bold;
+  color: white;
+  background-color: #E91E63;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

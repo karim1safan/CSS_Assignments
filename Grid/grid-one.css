@@ -1,0 +1,28 @@
+body{
+  font-family: "open sans";
+}
+.grid {
+  background-color: #ddd;
+  padding: 20px;
+  width: 800px;
+  height: 400px;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 60px auto;
+  gap: 15px;
+}
+.grid div{
+  color: white;
+  background-color: #607D8B;
+  position: relative;
+  counter-increment: string-num;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grid div::before{
+  content: "Element" " " counter( string-num);
+  font-weight: bold;
+  font-size: 25px;
+}
